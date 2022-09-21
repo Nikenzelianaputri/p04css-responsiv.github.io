@@ -41,8 +41,10 @@ button {
         padding: 0 ;
     }
     td {
-     font-size: 0.5rem;
-
+     font-size: 0.6rem;
+    }
+    th{
+        font-size: 0.6rem;
     }
 }
 @media only screen  and (max-witdh: 600px) {
@@ -51,7 +53,11 @@ button {
         padding: 0;
     }
     td{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        ;
+    }
+    th{
+        font-size:  0.9rem;
     }
     
 }
