@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <title>Formulir PMB</title>
     <link rel="stylesheet" href="Niken.css">
 </head>
@@ -12,19 +13,18 @@
     <div class="container">
         <img src="kop.png" width="100%" />
         <hr />
-        <h2 align="center" class="title">Formulir Pendaftaran Mahasiswa Baru</h2>
+        <h2 align="center" >Formulir Pendaftaran Mahasiswa Baru</h2>
         <h4 class="penulisan">Petunjuk Pengisian:</h4>
         <ol>
-            <li>Isilah data dengan cermat, teliti dan benar</li>
-            <li>Isilah dengan huruf balok</li>
-            <li>
-                Salah penulisan pada pengisian formulir ini akan berakibat kesalahan
-                pada penulisan data Saudara pada ijazah
+            <li style="color: red;">Isilah data dengan cermat, teliti dan benar</li>
+            <li style="color: red;">Isilah dengan huruf balok</li>
+            <li style="color: red;"> Salah penulisan pada pengisian formulir ini akan berakibat kesalahan pada penulisan data Saudara pada ijazah
             </li>
         </ol>
         <form>
-            <fieldset>
+            <fieldset width="100%">
                 <table>
+                    <tbody>
                     <tr>
                         <td>1.</td>
                         <td>Nomor Pendaftaran</td>
@@ -39,12 +39,7 @@
                     </tr>
                     <tr>
                         <td>3.</td>
-                        <td>
-                            Tanggal Ujian
-                            <br />
-                            <span>(Diisi oleh calon mahasiswa yang mengikuti ujian
-                                saringan)</span>
-                        </td>
+                        <td>Tanggal Ujian</td>
                         <td>:</td>
                         <td><input type="date" name="tgl_ujian" /></td>
                     </tr>
@@ -53,18 +48,18 @@
                         <td>Jenis Kelamin</td>
                         <td>:</td>
                         <td>
-                            <input type="radio" name="jk" value="Laki-laki" id="laki" />
-                            <label for="laki">Laki-Laki</label>
-                            <input type="radio" name="jk" value="Perempuan" id="cewe" />
-                            <label for="cewe">Perempuan</label>
+                            <input type="radio" name="jk" value="Laki-laki" maxlength="7" />Laki-laki
+                            <input type="radio" name="jk" value="Perempuan" maxlength="7" />Perempuan
                         </td>
                     </tr>
                     <tr>
                         <td>5.</td>
                         <td>Jenjang/Jurusan yang dipilih</td>
                         <td>:</td>
-                        <td>
-                            <table border="1"class="table-2">
+                    </tr>
+                    </tbody>
+                    </table>
+                            <table border="1" cellpadding="7">
                                 <thead>
                                     <tr>
                                         <th rowspan="2">JENJANG</th>
@@ -141,21 +136,17 @@
                             <label for="malem">Malem</label>
                         </td>
                     </tr>
+                    <br>
                     <tr>
                         <th></th>
                         <td>Ukuran Jaket</td>
                         <td>:</td>
                         <td>
-                            <input type="radio" id="small" name="ukuran_jaket" value="Small" />
-                            <label for="small">Small</label>
-                            <input type="radio" id="medium" name="ukuran_jaket" value="Medium" />
-                            <label for="medium">Medium</label>
-                            <input type="radio" id="large" name="ukuran_jaket" value="Large" />
-                            <label for="large">Large</label>
-                            <input type="radio" id="extra_large" name="ukuran_jaket" value="extra_large" />
-                            <label for="extra_large">Extra Large</label>
+                            <input type="radio"  name="ukuran_jaket" value="s" /> S <input type="radio"  name="ukuran_jaket" value="M" />M <br>
+                            <input type="radio"  name="ukuran_jaket" value="L" /> L <input type="radio"  name="ukuran_jaket" value="xl" />XL
                         </td>
                     </tr>
+                    <br>
                     <tr>
                         <th></th>
                         <td>Sistem Pembayaran * )</td>
@@ -171,7 +162,7 @@
                 </table>
             </fieldset>
             <br />
-            <fieldset>
+            <fieldset witdh="100%">
                 <legend><b>DATA PRIBADI</b></legend>
                 <table>
                     <tr>
@@ -194,7 +185,7 @@
                     </tr>
                     <tr>
                         <td>8.</td>
-                        <td>Alamat dan No. Rumah</td>
+                        <td>Alamat Lengkap</td>
                         <td>:</td>
                         <td><textarea name="alamat"></textarea></td>
                     </tr>
@@ -218,7 +209,7 @@
                     </tr>
                     <tr>
                         <td>9.</td>
-                        <td>Nomor Telepon Rumah / HP</td>
+                        <td>Nomor Telepon Rumah</td>
                         <td>:</td>
                         <td><input type="text" name="no_telp" /></td>
                     </tr>
@@ -264,7 +255,7 @@
                 </table>
             </fieldset>
             <br />
-            <fieldset>
+            <fieldset witdh="100%">
                 <legend><b>PENDIDIKAN TERAKHIR</b></legend>
                 <table>
                     <tr>
@@ -276,7 +267,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th></th>
+                        <td>13.</td>
                         <td>Status Sekolah/Perguruan Tinggi</td>
                         <td>:</td>
                         <td>
@@ -287,13 +278,13 @@
                         </td>
                     </tr>
                     <tr>
-                        <th></th>
+                        <td>14</td>
                         <td>Jurusan</td>
                         <td>:</td>
                         <td><input type="text" name="jurusan" /></td>
                     </tr>
                     <tr>
-                        <th></th>
+                        <td>15</td>
                         <td>Nomor Ijazah SMA/SMK/Diploma III/S1</td>
                         <td>:</td>
                         <td>
@@ -301,30 +292,29 @@
                         </td>
                     </tr>
                     <tr>
-                        <th></th>
+                        <td>17</td>
                         <td>Tanggal Lulus</td>
                         <td>:</td>
                         <td><input type="text" name="tgl_lulus" /></td>
                     </tr>
                 </table>
             </fieldset>
-            <table width="100%">
-                <tr>
-                    <td>
-                        <p>Catatan : *) Beri tanda silang sesuai dengan pilihan (hanya satu pilihan)</p>
-                    </td>
-                    <td>Cirebon, <input type="date" name="tanggal" id="tanggal"></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                    <td width="70%"></td>
-                    <td>(_________________________)</td>
-                </tr>
-            </table>
+
+            <div style="text-align: right">
+                <tbody>
+                    <br>
+                    <tr>
+                        <td align="right"><input type="text" name="kota" maxlength="15">,<input type="date" name="td-tgl">
+                        </td>
+                    </tr>
+                    <br>
+                    <br>
+                    <br>
+                    <tr><input type="text" name="" placeholder="Nama Jelas"></tr>
+                </tbody>
+            </div>
         </form>
         <button onclick="alert('Ini belum ada databasenya mohon tunggu hingga update wkwk')">Kirim</button>
     </div>
-
 </body>
-
 </html>
